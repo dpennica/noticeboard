@@ -11,6 +11,17 @@
 |
 */
 
-$app->get('/', function () use ($app) {
-    return $app->version();
+$app->get('/', function ()
+{
+    return view('index');
 });
+
+$app->get('/notices', 'NoticeController@index');
+
+$app->get('/notice/{id}', 'NoticeController@show');
+
+$app->post('/notice/create', 'NoticeController@store');
+
+$app->post('/notice/edit/{id}', 'NoticeController@update');
+
+$app->post('/notice/delete', 'NoticeController@destroy');

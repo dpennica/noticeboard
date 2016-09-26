@@ -1,4 +1,4 @@
-# Lumen PHP Framework
+# NoticeBoard App
 
 [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
 [![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
@@ -18,4 +18,4 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 ## License
 
-The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+The NoticeBoard is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
