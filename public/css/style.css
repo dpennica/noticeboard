@@ -96,21 +96,36 @@ header #main-navigation ul li a:hover {
 }
 
 #message_list {
+    clear: both;
     padding: 0;
 }
 
+#message_list:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
 .postit {
+    cursor: pointer;
     border: 1px solid #666;
     background: yellow;
-    width: 20%;
-    min-width: 200px;
-    height: auto;
+    width: 24%;
+    padding: 10px;
+    /* min-width: 200px; */
+    height: 150px;
+    overflow: hidden;
     min-height: 200px;
-    display: inline-block;
+    /* display: inline-block; */
+    float: left;
     text-decoration: none;
     list-style: none;
-    margin: 5px;
+    margin: 0.5%;
+    box-sizing: border-box;
+    
 }
+
+
 
 .postit.done {
     background: green;
@@ -119,4 +134,25 @@ header #main-navigation ul li a:hover {
 .notice-title {
     font-style: italic;
     font-weight: bold;
+}
+/* Massy Titolo primo span in li dentro postit */
+.postit li span:nth-of-type(1){
+    display: block;
+    border-bottom: white solid;
+    font-size: 14px;
+    text-align: center;
+    text-shadow: 1px 1px 1px gray;
+}
+.contenitore.selezionato{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color: rgba(255,255,255, 0.80);
+}
+.contenitore.selezionato .postit{
+    height:auto;
+    margin-left:38%;
+    margin-top: 30vh
 }

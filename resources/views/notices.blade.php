@@ -32,6 +32,7 @@
     <ul id="message_list" class="notice-list">
         @foreach($notices as $notice)
         @if(!$notice->status)
+    <div class="contenitore">
         <div class="postit done">
             <li id="{{$notice->id}}" >
                 <a href="#" class="toggle"></a>
@@ -41,7 +42,9 @@
                 <a href="#"onClick="edit_message('{{$notice->id}}','{{$notice->title}}');"class="icon-edit">Edit</a>
             </li>
         </div>
+    </div>
         @else
+    <div class="contenitore">
         <div class="postit">
             <li id="{{$notice->id}}">
                 <a href="#"onClick="message_done('{{$notice->id}}');"class="toggle"></a>
@@ -51,6 +54,7 @@
                 <a href="#" onClick="edit_message('{{$notice->id}}','{{$notice->title}}');"class="icon-edit">Edit</a>
             </li>
         </div>
+    </div>
         @endif
 
         @endforeach
