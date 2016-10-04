@@ -95,23 +95,16 @@ header #main-navigation ul li a:hover {
     background: #DAFF0B;
 }
 
-#message_list {
-    padding: 0;
-}
+
 
 .postit {
-    border: 1px solid #666;
-    background: yellow;
-    width: 20%;
-    min-width: 200px;
-    height: auto;
-    min-height: 200px;
     display: inline-block;
-    text-decoration: none;
-    list-style: none;
-    margin: 5px;
+    width: 20%;
+    list-style:none;
+    margin-top: 0;
+    padding: 0;
+    position: relative;
 }
-
 .postit.done {
     background: green;
 }
@@ -119,4 +112,24 @@ header #main-navigation ul li a:hover {
 .notice-title {
     font-style: italic;
     font-weight: bold;
+}
+.note {
+  color: #333;
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Satisfy;
+  font-size: 1em;
+  box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
+}
+
+.yellow {
+  background: #eae672;
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  transform: rotate(2deg);
 }
