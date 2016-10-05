@@ -8,3 +8,7 @@ function show_form(form_id){
 
 
 }
+
+$('div.postit').click(function(){
+   $(this).parent().toggleClass('selezionato'); 
+});

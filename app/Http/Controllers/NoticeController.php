@@ -23,16 +23,18 @@ class NoticeController extends Controller
 
         $this->validate($request, [
             'title' => 'required',
-            'description' => 'required',
-            'telephone' => 'required'
+            'description' => 'required'
         ]);
 
         $notice = new Notice();
+        $notice->status = 1;
+        $notice->user_id = 1;
         $notice->title = $request->input('title');
         $notice->description = $request->input('description');
-        $notice->telephone = $request->input('telephone');
 
         $notice->save();
+
+        return redirect('/notices'); 
     }
 
     public function update(Request $request, $id){
