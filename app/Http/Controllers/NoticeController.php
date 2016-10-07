@@ -10,7 +10,7 @@ class NoticeController extends Controller
 {
 
     public function index(){
-        $notices = Notice::all();
+        $notices = Notice::orderBy('id', 'desc')->get();
         // $notices = DB::table('notices')->get();
         return view('notices', compact('notices') );
     }
@@ -34,7 +34,7 @@ class NoticeController extends Controller
 
         $notice->save();
 
-        return redirect('/notices'); 
+        return redirect('/notices');
     }
 
     public function update(Request $request, $id){

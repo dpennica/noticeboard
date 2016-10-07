@@ -38,12 +38,12 @@
         <ul id="data_section" class="notice-list" >
             @foreach($notices as $notice)
                 <li>
-                    <div class="contenitore">
+                    <div class="contenitore yellow" >
                         <i class="pin"></i>
-                            <div id="{{$notice->id}}" class="postit yellow">
                             <small>{{$notice->created_at}}</small>
-                            <a href="#"onClick="delete_message('{{$notice->id}}');"class="icon-delete">Delete</a>
-                            <a href="#"onClick="edit_message('{{$notice->id}}','{{$notice->title}}');"class="icon-edit">Edit</a>
+                            <a href="#" onClick="delete_notice('{{$notice->id}}');"class="icon-delete">Delete</a>
+                            <a href="#" onClick="edit_message('{{$notice->id}}','{{$notice->title}}');"class="icon-edit">Edit</a>
+                            <div id="{{$notice->id}}" class="postit">
                             <h3><span id="span_{{$notice->id}}" class="notice-title">{{$notice->title}}</span></h3>
                             <p>
                                 <span class="notice-description">{{$notice->description}}</span>
