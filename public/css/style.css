@@ -187,6 +187,39 @@ header #main-navigation ul li a:hover {
     top:0;
     left: 0;
 }
+
+.contenitore .postit>p small{
+    display: block;
+    width: 36%;
+    margin: 1%;
+    margin-bottom: 4px;
+    float: left;
+    text-align: center;
+}
+
+.contenitore .postit>p a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 25%;
+    padding: 2px;
+    margin: 0 2%;
+    float: left;
+    text-align: center;
+    box-shadow: 2px 2px 1px gray inset, -2px -2px 6px black inset;
+    border-radius: 5px;
+    border-radius: 5px;
+}
+.contenitore .postit>p:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.postit>p{
+        border-bottom: solid thin black;
+        padding:2px;
+}
 /*.pin {
   background-color: #aaa;
   display: block;
