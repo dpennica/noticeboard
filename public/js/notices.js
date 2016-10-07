@@ -9,10 +9,14 @@ function show_form(form_id){
 
 }
 
-$('div.postit').click(function(){
-   $(this).parent().toggleClass('selezionato');
+$('div.postit section').click(function(){
+   $(this).parent().parent().toggleClass('selezionato');
 });
 
+$('div.contenitore >a').click(function(event){
+    event.preventDefault();
+    $(this).parent().removeClass('selezionato');
+});
 
 function notice_done(id){
 

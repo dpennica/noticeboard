@@ -131,7 +131,7 @@ header #main-navigation ul li a:hover {
 }*/
 
 .postit {
-    cursor: pointer;
+   
     border: 1px solid #666;
     background: #eae672;
     width: 24%;
@@ -147,6 +147,10 @@ header #main-navigation ul li a:hover {
     box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
 }
 
+.postit section{
+    cursor: pointer;
+}
+
 /* Massy Titolo primo span in li dentro postit */
 .postit li span:nth-of-type(1){
     display: block;
@@ -156,6 +160,7 @@ header #main-navigation ul li a:hover {
     text-shadow: 1px 1px 1px gray;
 }
 .contenitore.selezionato{
+    cursor: pointer;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -164,9 +169,23 @@ header #main-navigation ul li a:hover {
     background-color: rgba(255,255,255, 0.80);
 }
 .contenitore.selezionato .postit{
+    position: relative;
+    z-index: 200;
     height:auto;
     margin-left:38%;
     margin-top: 30vh
+}
+.contenitore>a{
+    display: none;
+}
+
+.contenitore.selezionato>a{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
 }
 /*.pin {
   background-color: #aaa;
